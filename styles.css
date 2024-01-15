@@ -120,6 +120,8 @@ a:active {
 
 .right-top > p {
     font-size: 1.5rem;
+
+    max-width: 50rem;
 }
 
 .bold {
@@ -163,22 +165,12 @@ a:active {
     border: none;
 }
 
-label {
-    font-size: 1rem;
-    font-weight: 500;
-    letter-spacing: 0.05rem;
-
-    margin-bottom: 0.2rem;
-
-    display: flex;
-}
-
 form {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
 
-    width: 30rem;
+    max-width: 30rem;
 }
 
 .title{
@@ -202,14 +194,28 @@ form > * {
     margin-bottom: 1.2rem;
 }
 
+label {
+    font-size: 1rem;
+    font-weight: 500;
+    letter-spacing: 0.05rem;
+
+    margin-bottom: 0.2rem;
+
+    display: flex;
+    flex-wrap: wrap;
+
+    flex: 1;
+}
+
 input {
-    width: 13rem;
     padding: 6px 8px;
 
     border: 1px solid #E5E7EB;
     border-radius: 4px;
 
     font-size: 1rem;
+
+    flex: 1;
 }
 
 input:focus {

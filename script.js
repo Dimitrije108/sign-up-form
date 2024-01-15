@@ -5,7 +5,7 @@ const noMatch = document.createElement('div');
 confirmPass.addEventListener('input', () => {
     if (pass.value !== confirmPass.value) {
         noMatch.classList.add('notMatching');
-        noMatch.textContent = 'Passwords are not matching';
+        noMatch.textContent = 'Passwords do not match';
         confirmPass.insertAdjacentElement('afterend', noMatch);
         confirmPass.style.border = '1px solid red';
     } else {
