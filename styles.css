@@ -2,19 +2,37 @@
     box-sizing: border-box;
 }
 
-html, 
+@font-face {
+    font-family: norse;
+    src: url('font/norse-bold.otf');
+}
+
+@font-face {
+    font-family: nanum-gothic;
+    src: url('font/NanumGothic-Regular.ttf');
+}
+
+html,
 body {
     margin: 0;
     padding: 0;
+
+    height: 100%;
+    width: 100%;
+
+    font-family: nanum-gothic;
+
+    display: flex;
 }
 
 .left {
-    width: 50vw;
-    height: 100vh;
-
     background-image: url("img/car4.jpg");
     background-repeat: no-repeat;
-    background-size: 100%;
+    background-size: cover;
+
+    position: relative;
+
+    flex: 1;
 }
 
 .logo-container {
@@ -22,10 +40,10 @@ body {
     height: 12rem;
 
     background-color: black;
-    opacity: 0.6;
+    opacity: 0.7;
 
-    position: relative;
-    top: 12rem;
+    position: absolute;
+    top: 9rem;
 
     display: flex;
     justify-content: center;
@@ -42,6 +60,182 @@ body {
 }
 
 .logo-container > p {
-    font-size: 2rem;
+    font-family: norse;
+    font-size: 3rem;
+
     color: white;
 }
+
+.author {
+    color: white;
+
+    position: absolute;
+    bottom: 0;
+    right: 2rem;
+}
+
+a {
+    color: white;
+}
+
+a:visited {
+    color: lightpink;
+}
+
+a:active {
+    color: lightcoral;
+}
+
+.right {
+    background-color: rgb(228, 235, 245);
+
+    display: flex;
+    flex-direction: column;
+
+    flex: 1;
+}
+
+.right-top {
+    padding: 3rem 3rem 1rem 3rem;
+
+    flex: 1;
+}
+
+.right-middle {
+    padding: 0.5rem 3rem 1rem 3rem;
+
+    background-color: azure;
+    box-shadow: 1px 6px 15px -2px rgba(0,0,0,0.5);
+
+    flex: 1.5;
+}
+
+.right-bottom {
+    padding: 2rem 0 0 3rem;
+
+    font-size: 1rem;
+
+    flex: 1;
+}
+
+.right-top > p {
+    font-size: 1.5rem;
+}
+
+.bold {
+    font-weight: 700;
+}
+
+.login {
+    color: blue;
+    letter-spacing: 0.03rem;
+
+    text-decoration: none;
+}
+
+.login:visited {
+    color: darkblue;
+}
+
+.btn {
+    padding: 0.8rem 3rem;
+
+    border: none;
+    border-radius: 8px;
+
+    font-family: nanum-gothic;
+    font-size: 1rem;
+    font-weight: 600;
+    letter-spacing: 0.05rem;
+
+    background-color: white;
+    color: black;
+
+    cursor: pointer;
+
+    box-shadow: 3px 4px 19px -8px rgba(0,0,0,0.71);
+}
+
+.btn:hover {
+    background-color: rgb(78, 104, 145);
+    color: white;
+
+    border: none;
+}
+
+label {
+    font-size: 1rem;
+    font-weight: 500;
+    letter-spacing: 0.05rem;
+
+    margin-bottom: 0.2rem;
+
+    display: flex;
+}
+
+form {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+
+    width: 30rem;
+}
+
+.title{
+    font-size: 1.4rem;
+    font-weight: 600;
+
+    margin: 1rem 0 0.3rem 0;
+}
+
+.tip {
+    font-size: 0.8rem;
+
+    margin: 0 0 2rem 0;
+}
+
+.register {
+    margin: 2.5rem 0;
+}
+
+form > * {
+    margin-bottom: 1.2rem;
+}
+
+input {
+    width: 13rem;
+    padding: 6px 8px;
+
+    border: 1px solid #E5E7EB;
+    border-radius: 4px;
+
+    font-size: 1rem;
+}
+
+input:focus {
+    outline: none;
+    box-shadow: 2px 1px 6px -2px rgba(0,0,0,0.56);
+
+    border: 1px solid rgb(2, 30, 204);
+}
+
+input[type="password"]:invalid {
+    border: 1px solid red;
+}
+
+input[type="password"]:valid {
+    border: 1px solid green;
+}
+
+span {
+    color: red;
+    font-size: 1rem;
+}
+
+input:valid:required {
+    border: 1px solid green;
+}
+
+
+
+

@@ -11,11 +11,50 @@
     <div class="left">
         <div class="logo-container">
             <div class="logo"></div>
-            <p>The Odin Project</p>
+            <p>The<br>Odin<br>Project</p>
         </div>
+        <p class="author">Photo by <a href="https://unsplash.com/@felifox">Felix Fuchs</a> on <a href="https://unsplash.com/">Unsplash</a></p>
     </div>
     <div class="right">
-
+        <div class="right-top">
+            <p><i>*This is not a real online service!</i></p>
+            <p class="register">Register and join our community. We publish our Car Culture magazine monthly so don't miss out!</p>
+            <p class="bold">Sign Up <i>NOW</i> to get a free month off!</p>
+        </div>
+        <div class="right-middle">
+            <p class="title">Let's do this!</p>
+            <p class="tip">Fields marked with an asterisk (<span>*</span>) are required</p>
+            <form id="registration" action="" method="post">
+                <div>
+                    <label for="first-name">FIRST NAME<span>*</span></label>
+                    <input type="text" id="first-name" minlength="2" maxlength="20" placeholder="Nikola" required>
+                </div>
+                <div>
+                    <label for="last-name">LAST NAME<span>*</span></label>
+                    <input type="text" id="last-name" minlength="2" maxlength="20" placeholder="Jokic" required>
+                </div>
+                <div>
+                    <label for="email">EMAIL<span>*</span></label>
+                    <input type="email" id="email" placeholder="johndoe@gmail.com" required>
+                </div>
+                <div>
+                    <label for="phone">PHONE NUMBER</label>
+                    <input type="tel" id="phone" placeholder="###-#######" pattern="^\d{3}(\-|\s)?\d{7}">
+                </div>
+                <div>
+                    <label for="password">PASSWORD<span>*</span></label>
+                    <input type="password" id="password" pattern="^(?=.*?[A-Z])(?=.*?[a-z])(?=.*?[0-9]).{8,16}$" required>
+                </div>
+                <div>
+                    <label for="confirm-password">CONFIRM PASSWORD<span>*</span></label>
+                    <input type="password" id="confirm-password" required>
+                </div>
+            </form>
+        </div>
+        <div class="right-bottom">
+            <button class="btn" type="submit" form="registration">Create Account</button>
+            <p>Already have an account? <a href="" class="login"><b>Log In</b></a></p>
+        </div>
     </div>
 
 </body>
