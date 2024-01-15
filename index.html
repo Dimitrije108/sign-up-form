@@ -47,7 +47,7 @@
                 </div>
                 <div>
                     <label for="confirm-password">CONFIRM PASSWORD<span>*</span></label>
-                    <input type="password" id="confirm-password" required>
+                    <input type="password" id="confirm-password" pattern="^(?=.*?[A-Z])(?=.*?[a-z])(?=.*?[0-9]).{8,16}$" required>
                 </div>
             </form>
         </div>

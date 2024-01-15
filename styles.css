@@ -236,6 +236,14 @@ input:valid:required {
     border: 1px solid green;
 }
 
+.notMatching {
+    color: red;
+
+    font-size: 0.8rem;
+
+    margin: 0.2rem 0 0 0;
+}
+
 
 
 
